@@ -1,0 +1,210 @@
+/**index.wxss**/
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/*轮播图*/
+@import "../../template/swiper/swiper.wxss";
+
+.section{
+  height: 65%;
+  /*background-color: #f7f7f7;*/
+}
+
+.section .title{
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.section .title image{
+  width: 32rpx;
+  height: 34rpx;
+  padding-right: 12rpx;
+}
+
+.section .content{
+  height: 87%;
+  position: relative;
+}
+.section .content:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #dddddd;
+    height: 1px;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+.section .content .left{
+  width: 46%;
+  height: 66%;
+  float: left;
+  position: relative;
+  font-size: 28rpx;
+}
+.section .content .left:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #dddddd;
+    height: 100%;
+    width: 1px;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+}
+.section .content .left image{
+  width: 100%;
+  height: 240rpx;
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);*/
+}
+.section .left .intro{
+  width: 50%;
+  word-wrap: break-word;
+  background-color: #fff;
+  margin-top: 4%;
+  margin-left: 4%;
+  padding-left: 5rpx;
+}
+.section .left .intro text{
+  font-size: 36rpx;
+  color: #ff5722;
+}
+.section .content .right{
+  height: 66%;
+  margin-left: 46%;
+  overflow: hidden;
+}
+.section .right .diagno{
+  height: 48%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section .right .diagno:nth-of-type(1){
+  position: relative;
+}
+.section .right .diagno:nth-of-type(1):after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #dddddd;
+    height: 1px;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+    
+.section .right .diagno .intro{
+  width: 50%;
+  word-wrap: break-word;
+  background-color: #fff;
+  margin-top: 4%;
+  margin-left: 4%;
+}
+.section .right .diagno .intro .tit{
+  width: 100%;
+  color: #ff5722;
+  padding-top: 20rpx;
+}
+.section .right .diagno .intro .desc{
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+
+.section .right .diagno .img{
+  width: 178rpx;
+  height: 160rpx;
+}
+.section .right .diagno .img image{
+  width: 100%;
+  height: 100%;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+
+.section .btom{
+  height: 34%;
+  position: relative;
+}
+
+.section .btom:after{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #dddddd;
+    height: 1px;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+
+.section .btom .diagno{
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section .btom .bleft{
+  width: 46%;
+  position: relative;
+}
+.section .btom .bleft:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #dddddd;
+    width: 1px;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+}
+.section .btom .bright{
+  width: 54%;
+  position: relative;
+}
+.section .btom .diagno .intro{
+  word-wrap: break-word;
+  font-size: 30rpx;
+  width: 46%;
+  background-color: #fff;
+  margin-top: 4%;
+  margin-left: 4%;
+}
+.section .btom .diagno .img{
+  width: 178rpx;
+  height: 160rpx;
+}
+.section .btom .diagno image{
+  width: 178rpx;
+  height: 160rpx;
+  margin-top: 25rpx;
+  margin-right: 20rpx;
+  
+}
+
+.section .btom .diagno .intro .tit{
+  width: 100%;
+  color: #ff5722;
+  padding-top: 20rpx;
+}
+.section .btom .diagno .intro .desc{
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}

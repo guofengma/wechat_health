@@ -1,0 +1,12 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="header">
+    <image src="https://health.lianlianchains.com/banner1.png"></image>
+  </view>
+  <view class="airticle">
+  看了三点法律考试的奶粉里开始的那份了盛大nfl卡萨丁你是单反拉萨的内分泌是单反开幕式的妇女受到粉丝电脑辐射看了三点法律考试的奶粉里开始的那份了盛大nfl卡萨丁你是单反拉萨的内分丁你是单律考试的奶粉里开始的那份了盛大nfl卡萨丁你是单反拉萨的内分泌是单反开幕式的妇女受到粉丝电脑辐射看了三点法律考试的奶粉里开始
+  </view>
+  <view class="footer">
+    <image src="https://health.lianlianchains.com/banner1.png"></image>
+  </view>
+</view>

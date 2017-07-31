@@ -1,0 +1,57 @@
+{
+  "pages":[ 
+     "pages/pay/pay", 
+      "pages/index/index",
+    "pages/demo/demo",
+      
+      "pages/sheet/sheet",
+    "pages/diagadd/diagadd",
+    
+    "pages/order/order",
+    
+    
+    "pages/consult/consult",
+    "pages/user/user",
+    "pages/registe/rigsiste",
+    "pages/userInfo/userInfo",
+    "pages/detail/detail",
+    "pages/spread/spread"
+    
+   
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "backgroundColor":"#ffffff",
+    "selectedColor": "#ff5722",
+    "borderStyle": "#dddddd",
+    "list": [
+      {
+        "selectedIconPath": "./image/homeAct.png",
+        "iconPath": "./image/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "./image/consultAct.png",
+        "iconPath": "./image/consult.png",
+        "pagePath": "pages/consult/consult",
+        "text": "咨询"
+      },
+      {
+        "selectedIconPath": "./image/userAct.png",
+        "iconPath": "./image/user.png",
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      }
+    ]
+  }
+  
+}

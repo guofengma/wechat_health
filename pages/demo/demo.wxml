@@ -1,0 +1,8 @@
+<!--pages/demo/demo.wxml-->
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_hot_box" wx:for="{{hotList}}">
+        <image src="{{item.pic}}" class="recommend_hot_image"></image>
+      </view>
+    </scroll-view>
+    <button bindtap="tixian">提现</button>
+    <button bindtap="tuikuan">退款</button>

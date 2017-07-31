@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<import src="../../template/swiper/swiper.wxml" />
+<view class="container">
+  <!--轮播图-->
+  <template is="swiper" data="{{...swiperData}}"></template>
+  <view class="section">
+    <view class="title">
+      <image src="../../image/slogan.png"></image>
+      <text class="cell">不孕不育 男女同治</text>
+    </view>
+    <view class="content" bindtap="bindDetailTap">
+      <view class="left item">
+        <image src="https://health.lianlianchains.com/all.png?v=201706161035"></image>
+        <view class="intro">
+          <view class="classname">夫妻同治</view>
+          <view class="classname">好<text>孕</text>自然来</view>
+        </view>
+      </view>
+      <view class="right item">
+        <view class="diagno" bindtap="first">
+          <view class="intro">
+            <view class="desc">家天下,专治男女不孕不育</view>
+            <!--<view class="tit">了解更多</view>-->
+          </view>
+          <view class="img">
+            <image src="https://health.lianlianchains.com/major.png?v=201706161035"></image>
+          </view>
+        </view>
+        <view class="diagno" bindtap="second">
+          <view class="intro">
+            <view class="desc">数以百万家庭成功受孕</view>
+            <!--<view class="tit">了解更多</view>-->
+          </view>
+          <view class="img">
+            <image src="https://health.lianlianchains.com/family.png?v=201706161035"></image>
+          </view>
+        </view>
+      </view>
+      <view class="btom">
+        <view class="diagno bleft" bindtap="third">
+          <view class="intro">
+            <view class="desc">健康怀孕,原理你知多少</view>
+            <!--<view class="tit">了解更多</view>-->
+          </view>
+          <view class="img">
+            <image src="https://health.lianlianchains.com/use.png?v=201706161035"></image>
+          </view>
+        </view>
+        <view class="diagno bright" bindtap="fouth">
+          <view class="intro">
+            <view class="desc">科学管理,让孩子更健康</view>
+            <!--<view class="tit">了解更多</view>-->
+          </view>
+          <view class="img">
+            <image src="https://health.lianlianchains.com/manage.png?v=201706161035"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

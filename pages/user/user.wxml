@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="header" bindtap="bindUpdateTap">
+    <view class="avatar">
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="info">
+      <view class="nickName">
+        <text>{{userInfo.nickName}}</text>
+      </view>
+      
+      <view class="infoAs">
+        <view class="age"></view>
+      </view>
+    </view>
+    <image class="arrow" src="../../image/arrowL.png"></image>
+  </view>
+  <view class="content">
+    <view class="item">
+      <view class="logo">
+        <image src="../../image/score.png"></image>
+      </view>
+      <view class="name">
+        <text>我的积分</text>
+      </view>
+      <view class="score">
+        <text>{{score}} 分</text>
+      </view>
+    </view>
+    <view class="item" bindtap="bindOrderTap">
+      <view class="logo">
+        <image src="../../image/orders.png"></image>
+      </view>
+      <view class="name">
+        <text>我的订单</text>
+      </view>
+      <image class="arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="item" bindtap="bindSheetTap">
+      <view class="logo">
+        <image src="../../image/info.png"></image>
+      </view>
+      <view class="name">
+        <text>问诊信息</text>
+      </view>
+      <image class="arrow" src="../../image/arrow.png"></image>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/demo/demo.wxss */
+.recommend_scroll_x_box {
+  height: 245rpx;
+  white-space: nowrap;
+  display: flex;
+  overflow:auto;/* winphone8和android4+ */
+-webkit-overflow-scrolling: touch; /* ios5+ */
+}
+
+/*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}*/
+
+.recommend_hot_box {
+  width: 230rpx;
+  height: 245rpx;
+  margin-right: 24rpx;
+  display: inline-block;
+}
+
+.recommend_hot_image {
+  width: 230rpx;
+  height: 143rpx;
+}

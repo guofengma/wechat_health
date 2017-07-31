@@ -1,0 +1,16 @@
+<!--pages/spread/spread.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="headbg">
+      <image src="../../image/spreads.png"></image>
+    </view>
+    <view class="rule">
+      <view class="title">规则:</view>
+      <view class="rulecont">
+        <view class="ruleitem"><text>1.</text>用户转发分享可获取积分</view>
+        <view class="ruleitem"><text>2.</text>转发500人以上可享受9折优惠</view>
+        <view class="ruleitem"><text>3.</text>看病时可用积分抵扣现金</view>
+      </view>
+    </view>
+  </view>
+</view>

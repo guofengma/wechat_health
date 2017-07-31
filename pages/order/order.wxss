@@ -1,0 +1,45 @@
+/* pages/order/order.wxss */
+page{height:100%}
+.container{
+   height: 100%;
+   background-color: #f7f7f7;
+   overflow: auto;
+   -webkit-overflow-scrolling: touch;
+   color: #333333;
+   font-size: 26rpx;
+   padding-bottom: 30rpx;
+}
+.container .orderItem{
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 30rpx 0;
+}
+.container .elem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.container .elem:first-of-type{
+  position: relative;
+  padding-bottom: 30rpx;
+  color: #999999;
+}
+.container .elem:first-of-type:after{
+  position: absolute;
+  content: '';
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(.5);
+  transform: translateY(.5);
+  background-color: #ddd;
+}
+.container .elem:nth-of-type(2){
+  padding: 30rpx;
+}
+.time{
+  text-align: right;
+  padding: 0 30rpx;
+}

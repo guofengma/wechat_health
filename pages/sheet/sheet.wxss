@@ -1,0 +1,238 @@
+/* pages/sheet/sheet.wxss */
+/*搜索框*/
+.container{
+  height: 100%;
+  padding-bottom: 100rpx;
+  color: #333333;
+}
+.search{
+  padding:20rpx;
+  position: relative;
+}
+.search:before{
+  content:"";
+  position: absolute;
+  background-color: #dddddd;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: translateY(.5);
+  transform: translateY(.5);
+}
+.search:after{
+  content:"";
+  position: absolute;
+  background-color: #dddddd;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: translateY(.5);
+  transform: translateY(.5);
+}
+.search .inputs{
+  width: 616rpx;
+  height: 70rpx;
+  background-color: #f7f7f7;
+  border-radius: 35rpx;
+  overflow: hidden;
+}
+.search input{
+  width: 552rpx;
+  height: 100%;
+  padding-left: 64rpx;
+  text-indent: 190rpx;
+}
+
+.search .add{
+  width: 45rpx;
+  height: 45rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40rpx;
+}
+.search2 .inputs{
+  width: 711rpx;
+  height: 70rpx;
+  background-color: #f7f7f7;
+  border-radius: 35rpx;
+  overflow: hidden;
+}
+.search2 input{
+  width: 711rpx;
+  height: 70rpx;
+  padding-left: 64rpx;
+  text-indent: 220rpx;
+}
+
+.container .content .diagList{
+  padding: 28rpx 0;
+  position: relative;
+  margin: 0 30rpx;
+}
+
+.container .content .diagList:after{
+    content:"";
+    position: absolute;
+    background-color: #dddddd;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: translateY(.5);
+    transform: translateY(.5);
+}
+
+.container .content .diagList .cBtm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .content .diagList .top,.container .content .diagList .info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+.container .content .diagList .top .time{
+  color: #BBBBBB;
+}
+.container .content .diagList .top .eval{
+  color: #ff5722;
+}
+.container .content .diagList .desc{
+  margin-bottom: 30rpx;
+}
+.container .content .diagList .desc .descTit{
+  margin-bottom: 16rpx;
+}
+.container .content .diagList .desc .descont{
+  margin-bottom: 16rpx;
+  color: #666666;
+}
+.container .content .diagList .label .text{
+  display: inline-block;
+  margin-right: 14rpx;
+  font-size: 24rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: rgba(255, 87, 34, .3);
+  color: #ff5722;
+  border-radius: 4px;
+  padding: 0 10rpx;
+}
+.container .content .diagList .shareBtn{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 10rpx;
+  position: absolute;
+  bottom: 6rpx;
+  right: 2rpx;
+  /*background-color: white;*/
+  border-radius: 0px;
+  border-color: red;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+.container .content .diagList .share{
+  width: 54rpx;
+  height: 54rpx;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  border: 1px #fff solid;
+  /*padding: 8rpx;
+  position: absolute;
+  bottom: 6rpx;
+  right: 2rpx;*/
+}
+/*医师列表*/
+.docItem{
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  padding:30rpx;
+}
+.docItem:last-of-type{
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  margin-bottom: 100rpx;
+}
+
+.docItem .head{
+  display: flex;
+  display: -webkit-flex;
+}
+
+.docItem .head .avator{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+
+.docItem .head .avator image{
+  width: 100%;
+  height: 100%;
+}
+
+.docItem .head .headR{
+  width: 80%;
+  margin-left: 26rpx;
+  padding-top: 10rpx;
+}
+
+.docItem .head .headR .name{
+  margin-right: 50rpx;
+}
+.docItem .head .headR .headRD{
+  padding: 15rpx 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*疾病列表*/
+.ill{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.illItem{
+  width: 320rpx;
+  text-align: center;
+  margin-top: 50rpx;
+  background-color: #fff;
+}
+.illItem:nth-of-type(2n+1){
+  margin-left:30rpx;
+}
+.illItem:nth-of-type(2n){
+  margin-right:30rpx;
+}
+.illItem .illImg image{
+  width: 100%;
+  height: 220rpx;
+}
+.illItem .illName{
+  background-color: #fff;
+}
+
+.money{
+  color: #BBBBBB;
+}
+
+.loading{
+  text-align: center;
+  margin-top: 50rpx;
+  padding: 0 0 30rpx;
+}

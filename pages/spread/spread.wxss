@@ -1,0 +1,55 @@
+/* pages/spread/spread.wxss */
+.container {
+  height: 100vh;
+  background-color: rgba(255, 87, 34, .7);
+  overflow: hidden;
+}
+.content{
+  background-color: white;
+  height: 95%;
+  margin:30rpx;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow:-2px 0 10px #ef6237,  
+    2px 0 10px #ef6237, 
+    0 -2px 10px #ef6237,  
+    0 2px 10px #ef6237;   
+  -webkit-box-shadow:-2px 0 10px #ef6237,  
+    2px 0 10px #ef6237, 
+    0 -2px 10px #ef6237,  
+    0 2px 10px #ef6237;  
+}
+.container .headbg {
+  height: 480rpx;
+  overflow: hidden;
+  border-bottom: 1px #dddddd dashed;
+}
+
+.container .headbg image {
+  width: 100%;
+}
+
+.container .rule {
+  background-color: #fff;
+  padding: 60rpx 30rpx 30rpx 40rpx;
+}
+.container .rule .title{
+  color: #ff5722;
+}
+.container .rule .rulecont{
+  margin-top: 20rpx;
+  line-height: 45rpx;
+}
+.container .rule .rulecont .ruleitem{
+  margin-top: 10rpx;
+}
+.container .rule .rulecont .ruleitem text{
+  /*font-weight: bold;*/
+  padding-right: .5em;
+}
+.container .rule .ruleBtm{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

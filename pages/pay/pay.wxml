@@ -1,0 +1,23 @@
+<!--pages/pay/pay.wxml-->
+<view class="container">
+  <form report-submit='true' bindsubmit="bindSubmitTap">
+      <view class="content">
+        <view class="tit">请输入金额：</view>
+        <view class="moneycont">
+          <view class="money">
+            <image src="../../image/money.png"></image>
+          </view>
+          <view class="num">
+            <input name="fee" bindinput="bindInputTap" type="digit" placeholder="金额" placeholder-style="color:#dddddd;" />
+          </view>
+        </view>
+        <view class="score">
+          <image src="{{chectAct? '../../image/checkact.png':'../../image/check.png'}}" bindtap="isUseScore"></image>
+          <text>使用积分</text>
+        </view>
+        <view class="info">当前积分{{score}}分，可抵扣{{cashMoney}}元诊金</view>
+      </view>
+      <button disabled="{{isActive ? false : true}}" class="{{isActive ? 'active' : 'noAble'}}" type="primary" formType="submit">去支付</button> 
+    </form>
+    <view class="home" bindtap="bindHomeTap">返回首页</view>
+</view>

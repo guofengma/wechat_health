@@ -1,0 +1,55 @@
+<!--pages/sheet/sheet.wxml-->
+<view class="container">
+  <scroll-view 
+  scroll-y
+  scroll-top="{{scrollTop}}"  
+  style="height:{{scrollHeight}}px;" class="list"                         enable-back-to-top=true 
+  bindscrolltolower="bindDownLoad" 
+  bindscroll="scroll" 
+  bindscrolltoupper="refreshs"
+  enable-back-to-top="true"
+  >
+  <view class="search" wx:if="{{isShow}}">
+    <view class="inputs">
+      <input type="text" bindconfirm="bindSerchTap" confirm-type="search" placeholder="请输入单号" />
+    </view>
+    <image class="add" bindtap="bindAddTap" src="../../image/more.png"></image>
+  </view>
+  <view class="search search2" wx:if="{{!isShow}}">
+    <view class="inputs">
+      <input  type="text" bindconfirm="bindSerchTap" confirm-type="search" placeholder="请输入单号" />
+    </view>
+  </view>
+  <view class="content">
+    <view class="diagList" wx:for="{{selfDiaglist}}" wx:key="unique" wx:for-index="index" wx:for-item="itemDiag">
+      <view class="top">
+        <view class="eval">{{itemDiag.diagnosisid}}</view>
+        <view class="time">{{itemDiag.datetime}}</view>
+      </view>
+      <view class="info">
+        <view class="classname">医院：{{itemDiag.hospital}}</view>
+        <view class="classname">医生：{{itemDiag.doctor}}</view>
+      </view>
+      <view class="desc">
+        <view class="descTit">症状描述</view>
+        <view class="descont">{{itemDiag.symptom}}</view>
+      </view>
+      <!--<view class="cBtm">
+        <view class="label">
+          <text class="text" wx:for="{{itemDiag.label}}">{{item}}</text>
+        </view>
+        <view class="money">金额：{{itemDiag.amt}}</view>
+      </view>-->
+      <view class="cBtm">
+        <view class="label">
+          <text class="text">{{itemDiag.label}}</text>
+        </view>
+        <view class="money">金额：{{itemDiag.amt}}</view>
+      </view>
+      
+    </view>
+
+  </view>
+  <view class="loading">{{loadingMsg}}</view>
+  </scroll-view> 
+</view>

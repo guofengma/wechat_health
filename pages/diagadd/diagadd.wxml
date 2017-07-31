@@ -1,0 +1,87 @@
+<!--pages/diagadd/diagadd.wxml-->
+<view class="tip" wx:if="{{tipflag}}">信息填写不完整</view>
+<view class="container">
+  <!--<view class="title"></view>-->
+  <!--<view class="title">完善诊疗单可获得5分哦</view>-->
+  <view class="content">
+    <view class="head">诊疗单</view>
+    <form bindsubmit="formSubmit">
+      <view class="cenCont">
+        <view class="diagsisid elem">
+          <view class="tit">单号:</view>
+          <view class="classname">
+            <input type="text" name="diagnosisid" placeholder="请输入单号" />
+          </view>
+        </view>
+        <!--<view class="hospital elem" bindchange="bindPickerChange">
+          <view class="tit">医院:</view>
+          <view class="section">
+            <picker bindchange="bindPickerChange" name="hospital" value="{{index}}" range="{{array}}">
+            <view class="picker">{{array[index]}}</view>
+            <input hidden="hidden" type="text" value="{{array[index]}}" placeholder="请输入单号" />
+            </picker>
+            <image class="arrow" src="../../image/arrow.png"></image>
+          </view>
+        </view>-->
+        <view class="doctor elem">
+          <view class="tit">医院:</view>
+          <view class="classname">
+            <input maxlength="16" type="text" name="hospital" placeholder="请输入医院" />
+          </view>
+        </view>
+        <view class="doctor elem">
+          <view class="tit">医生:</view>
+          <view class="classname">
+            <input maxlength="16" type="text" name="doctor" placeholder="请输入医生的姓名" />
+          </view>
+        </view>
+        <view class="money elem">
+          <view class="tit">金额:</view>
+          <view class="classname">
+            <input type="number" name="amt" placeholder="请输入金额" />
+          </view>
+        </view>
+        <!--<view class="types elem">
+          <view class="tit">类型:</view>
+          <view class="typecont">
+              <view class="{{item.id?'typeAct':'typeItem'}}" wx:for="{{items}}" bindtap="bindTypeTap" data-idx="{{item.id}}"  wx:for-index="index">
+                <view class="text" data-index="{{index}}" data-idx="{{item.id}}">{{item.value}}</view>
+              </view>
+          </view>
+        </view>-->
+        <view class="type elem">
+          <view class="tit">类型:</view>
+          <view class="classname">
+            <input maxlength="16" type="text" name="types" placeholder="请输入类型" />
+          </view>
+        </view>
+        <view class="evalues elem">
+          <view class="tit">评价:</view>
+          <view class="evalcont">
+              <view class="evalItem" wx:for="{{evalues}}" wx:for-index="index">
+                <image data-idx="{{index}}" bindtap="bindEvalTap" src="{{item.starUrl}}"></image>
+              </view>
+          </view>
+        </view>
+        <view class="description">
+          <view class="tit">病况描述:</view>
+          <view class="descont">
+            <textarea maxlength="100" class="desc" cursor-spacing="10px" auto-height='true' placeholder="100字以内..." name="symptom" />
+          </view>
+        </view>
+
+        <button formType="submit" class="subBtn">完成</button>
+      </view>
+
+    </form>
+  </view>
+
+</view>
+<!--<view class="section">
+  <view class="section__title">地区选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>-->

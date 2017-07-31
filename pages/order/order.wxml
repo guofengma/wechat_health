@@ -1,0 +1,14 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="orderItem" wx:for="{{orderList}}">
+    <view class="elem">
+      <view class="classname">订单编号：{{item.orderNo}}</view>
+      <view class="classname">{{item.state}}</view>
+    </view>
+    <view class="elem">
+      <view class="classname">{{item.mch_id}}</view>
+      <view class="classname">金额：¥{{item.fee}}</view>
+    </view>
+    <view class="time">{{item.time}}</view>
+  </view>
+</view>
